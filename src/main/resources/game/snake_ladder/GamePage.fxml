@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="game.snake_ladder.GameController"
+            prefHeight="1080.0" prefWidth="720.0">
+
+
+    <children>
+
+        <ImageView fitHeight="400" fitWidth="400" layoutX="340" layoutY="50">
+            <image>
+                <Image url="@snake-ladder.jpg"/>
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="100" fitWidth="280" layoutX="400" layoutY="500" onMouseClicked="#startgame" >
+            <image>
+                <Image url="@play.jpg"/>
+            </image>
+        </ImageView>
+
+    </children>
+
+</AnchorPane>

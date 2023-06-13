@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="game.snake_ladder.PlayAreaController"
+            prefHeight="1080.0" prefWidth="720.0">
+
+<!--    Titile-->
+    <ImageView fitHeight="150" fitWidth="280" layoutX="100" layoutY="50">
+        <image>
+            <Image url="@snakeladdername.png"/>
+        </image>
+    </ImageView>
+
+
+    <!-- ........................................BOARD.............................................................. -->
+
+    <ImageView fitHeight="550" fitWidth="550" layoutX="480" layoutY="120">
+        <image>
+            <Image url="@board2.jpg"/>
+        </image>
+    </ImageView>
+
+    <!-- .........................................Player RED - 1 ................................................... -->
+
+    <ImageView fitHeight="30" fitWidth="20" layoutX="100" layoutY="500">
+        <image>
+            <Image url="@red.png"/>
+        </image>
+    </ImageView>
+
+    <Text layoutX="150" layoutY="625" text="Player 2">
+        <font>
+            <Font size="20"> </Font>
+        </font>
+    </Text>
+
+    <ImageView fx:id="red_position" fitHeight="30" fitWidth="20" layoutX="427.5" layoutY="635">
+        <image>
+            <Image url="@red.png"/>
+        </image>
+    </ImageView>
+
+    <!-- .........................................Player BLUE - 2 .................................................. -->
+
+    <ImageView fitHeight="30" fitWidth="20" layoutX="100" layoutY="600">
+        <image>
+            <Image url="@blue.png"/>
+        </image>
+    </ImageView>
+
+    <Text layoutX="150" layoutY="525" text="Player 1">
+        <font>
+            <Font size="20"> </Font>
+        </font>
+    </Text>
+
+    <ImageView fx:id="blue_position" fitHeight="30" fitWidth="20" layoutX="450" layoutY="635">
+        <image>
+            <Image url="@blue.png"/>
+        </image>
+    </ImageView>
+
+    <!-- ......................................... Dice............................................................. -->
+
+    <ImageView fitHeight="100" fitWidth="100" layoutX="100" layoutY="225" onMouseClicked="#diceclicked">
+        <image>
+            <Image url="@dice.png"/>
+        </image>
+    </ImageView>
+
+    <!-- ......................................... Dice Result & Turn .............................................. -->
+    <Text fx:id="changeturn" layoutY="400" layoutX="150" text="Player 1:Click on dice to play!">
+        <font>
+            <Font size="20"> </Font>
+        </font>
+    </Text>
+
+
+    <Text fx:id="dice_no_op"  layoutY="440" layoutX="150" >
+        <font>
+            <Font size="20"> </Font>
+        </font>
+
+    </Text>
+
+
+</AnchorPane>
